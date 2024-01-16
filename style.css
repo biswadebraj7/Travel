@@ -801,9 +801,16 @@ margin: 0px auto;
 }
 /**response meida query coding section**/
 @media only screen and (max-width: 600px) {
-  .destination-contentOne {
+  .destination-contentOne{
     flex-wrap: wrap;
 
+  }
+  .place-content{
+    flex-wrap: wrap;
+  }
+  .newsleet-content{
+    flex-wrap: wrap;
+    
   }
   .choose-card-content{
     flex-wrap: wrap;
@@ -813,11 +820,43 @@ margin: 0px auto;
     flex-wrap: wrap;
     
   }
+  .banner-title{
+    color: #FFF;
+  font-family: Mulish;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding:0px;
+    }
+  .form-part{
+    display: flex;
+    width: 487px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .form-part input{
+    width: 255px;
+  height: 52px;
+  flex-shrink: 0;
+  }
+
   .choose-cards{
     padding: 32px;
   }
 .destination-describetion{
   padding: 24px;
+}
+.destination-contentOne{
+  margin:0px auto;
+}
+.destination-contentOne img{
+  width:450px;
+  height: 300px;
+  margin: 0px auto;
+
 }
 .tour-content{
   flex-wrap: wrap;
