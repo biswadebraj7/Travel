@@ -908,9 +908,6 @@ margin: 0px auto;
     margin-bottom: 16px;
 }
 
-  .choose-cards{
-    padding: 32px;
-  }
 .destination-describetion{
   padding: 24px;
 }
@@ -972,6 +969,25 @@ margin: 0px auto;
   text-align: center;
 
 }
+
+.choose-card{
+  width: 335px;
+  height: 289px;
+  margin-left: 40px;
   
+
+}
+.choose-cards{
+  width: 335px;
+  height: 289px;
+
+
+
+  }
+  
+  .choose-describe{
+    width: 271px;
+
+  }
 }
 
