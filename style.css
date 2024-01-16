@@ -259,7 +259,7 @@ background: rgba(255, 255, 255, 0.30);
 /**Choose Your Destination**/
 
 .Destination{
-  padding: 100px 0px;
+  padding-bottom: 100px;
   margin: auto;
 }
 .destination-title{
@@ -290,7 +290,7 @@ background: rgba(255, 255, 255, 0.30);
   align-items: center;
   justify-content: space-between;
   gap:24px;
-  margin-bottom: 10px;
+  
 }
 .item1{
   width: 573px;
@@ -347,6 +347,103 @@ background: rgba(255, 255, 255, 0.30);
   line-height: normal;
   z-index: 5;
   position: relative;
-  bottom: 150px;
+  bottom: 175px;
+  
+}
+/**choose-container section**/
+.choose-container{
+  padding-bottom: 100px;
+  margin: auto;
+}
+.choose-card-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 573px;
+
+
+
+  
+}
+.choose-card{
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+
+
+}
+.choose-card{
+  padding: 32px;
+}
+.choose-photo{
+  width: 64px;
+  height: 64px;
+
+}
+.choose-title{
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 24px 0px;
+}
+.choose-describe{
+  width: 486px;
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+ 
+}
+.choose-end-content{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+
+}
+.choose-cards{
+    border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+    width: 573px;
+    height: 284px;
+  
+    padding: 32px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+/**response meida query coding section**/
+@media only screen and (max-width: 600px) {
+  .destination-contentOne {
+    flex-wrap: wrap;
+
+  }
+  .choose-card-content{
+    flex-wrap: wrap;
+
+  }
+  .choose-end-content{
+    flex-wrap: wrap;
+    
+  }
+  .choose-cards{
+    padding: 32px;
+  }
+.destination-describetion{
+  padding: 24px;
+}
+.tour-content{
+  flex-wrap: wrap;
+}
+.banner-describe{
+  padding:0px;
+}
   
 }
