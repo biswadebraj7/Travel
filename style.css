@@ -44,6 +44,9 @@ a{
   padding-left: 5px;
 
 }
+.bar{
+  display: none;
+}
 .navbar-brand a{
   display: flex;
   align-items: center;
@@ -83,6 +86,7 @@ a{
   list-style: none;
 }
 .navbar ul li a{
+  color: #131318;
 
   text-align: center;
   font-family: Mulish;
@@ -801,6 +805,56 @@ margin: 0px auto;
 }
 /**response meida query coding section**/
 @media only screen and (max-width: 600px) {
+
+  /**navbar*/
+  .navbar-nav{
+    display: flex;
+
+  }
+ 
+  .navbar{
+    
+    
+    
+    
+    background-color: #FF5400;
+  }
+  #navbar{
+    display: block;
+    width: 100%;
+    height: 100vh;
+  margin-top: 20px;
+  /*left: -100%;*/
+    position: fixed;
+  
+    right: 0px;
+    display: block;
+    justify-content: flex-start;
+
+    
+  
+
+
+  }
+  #navbar li{
+    display: block;
+    margin-top:15px ;
+    padding: 10px;
+  }
+  #navbar li a{
+    color: #fffaff;
+  }
+  #bar{
+    display: block;
+  }
+#bar:checked ~#navbar{
+  position:relative;
+  left: 100%;
+
+
+}
+
+  /**/
   .destination-contentOne{
     flex-wrap: wrap;
 
@@ -829,19 +883,30 @@ margin: 0px auto;
   line-height: normal;
   padding:0px;
     }
-  .form-part{
+  .banner-form-part{
     display: flex;
-    width: 487px;
+    width: 400px;
     padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
+    margin: 0px auto;
+  
+  }
+  .form-part{
+    display: block;
+    align-items: center; 
     gap: 16px;
+
   }
   .form-part input{
     width: 255px;
-  height: 52px;
-  flex-shrink: 0;
+    height: 52px;
+
+    margin-bottom: 16px;
   }
+  .form-part select{
+    width: 255px;
+    height: 52px;
+    margin-bottom: 16px;
+}
 
   .choose-cards{
     padding: 32px;
@@ -864,5 +929,49 @@ margin: 0px auto;
 .banner-describe{
   padding:0px;
 }
+.place-content-right{
+  margin:0px auto;
+}
+.place-photo{
+  width: 500px;
+ 
+}
+
+.newslettet-right-content img{
+  width: 435px;
+  height: 300px;
+  margin: 0px auto;
+
+}
+.saveup{
+  width: 214px;
+  height: 80px;
+  position: relative;
+  transform: rotate(-19.628deg);
+  top: -120px;
+
+
+
+}
+.link{
+  color: #FFF;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 15.854px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.save-title{
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 21.138px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+
+}
   
 }
+
