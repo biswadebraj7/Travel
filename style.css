@@ -831,10 +831,6 @@ margin: 0px auto;
     display: block;
     justify-content: flex-start;
 
-    
-  
-
-
   }
   #navbar li{
     display: block;
@@ -985,12 +981,11 @@ margin: 0px auto;
 
   }
   .count-list{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     
   }
   .count-list li{
+    margin-bottom: 5px;
    
   }
   
@@ -1000,9 +995,9 @@ margin: 0px auto;
   .count-card{
     width: 303px;
     height: 350px;
-   
     display: block;
     align-items: center;
+    margin:48px 40px;
     
     
   
@@ -1022,6 +1017,13 @@ margin: 0px auto;
     -webkit-box-orient: vertical;
     overflow: hidden;
     
+  }
+  #count-card2{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    margin:48px 40px;
   }
   
 }
