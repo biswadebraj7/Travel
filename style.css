@@ -4,13 +4,16 @@
     padding: 0;
 
 }
+
 body{
     font-family: 'Mulish', sans-serif;
 }
 a{
   text-decoration: none;
 }
-
+.check{
+  display: none;
+}
 .container{
   max-width: 1170px;
   width: 98%;
@@ -44,9 +47,7 @@ a{
   padding-left: 5px;
 
 }
-#bar{
-  display: none;
-}
+
 .navbar-brand a{
   display: flex;
   align-items: center;
@@ -76,16 +77,16 @@ a{
 
   
 }
-.navbar ul{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 44px;
 }
-.navbar ul li{
+.navbar  li{
   list-style: none;
 }
-.navbar ul li a{
+.navbar  li a{
   color: #131318;
 
   text-align: center;
@@ -96,7 +97,7 @@ a{
   line-height: normal;
   text-decoration: none;
 }
-.navbar ul li a:hover 
+.navbar  li a:hover 
 {
   color: #FF5400;
 }
@@ -146,8 +147,8 @@ a{
 }
 .banner-form-part{
   border-radius: 8px;
-background: rgba(255, 255, 255, 0.30);
-  margin: 0px 180px;
+  background: rgba(255, 255, 255, 0.30);
+  margin: 0px 160px;
   padding:16px;
 }
 .form-part{
@@ -803,6 +804,13 @@ margin: 0px auto;
   font-weight: 300;
   line-height: normal;
 }
+
+#check{
+  display: none;
+}
+.checker{
+  display: none;
+}
 /**response meida query coding section**/
 @media only screen and (max-width: 600px) {
 
@@ -811,43 +819,30 @@ margin: 0px auto;
     display: flex;
 
   }
- 
   .navbar{
-    
-    
-    
-    
-    background-color: #FF5400;
-  }
-  #navbar{
-    display: block;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     height: 100vh;
-  margin-top: 20px;
-  /*left: -100%;*/
-    position: rel;
-  
-    right: 0px;
-    display: block;
-    justify-content: flex-start;
-
+    background-color: #FF5400;
+    position: fixed;
+    top: 0;
+    left:-100%;
+    z-index: 15;
+    transition: all 0.9s ease-in-out;
   }
-  #navbar li{
-    display: block;
-    margin-top:15px ;
-    padding: 10px;
+  .navbar li{
+    margin-top: 1px; 
   }
-  #navbar li a{
+ .navbar li a{
     color: #fffaff;
   }
-  #bar{
-    display: block;
-  }
-#bar:checked ~#navbar{
-  position:relative;
-  left: 100%;
-
-
+ .checker{
+  display: block;
+ }
+.checker:checked~.navbar{
+  left: 0; 
 }
 
   /**/
